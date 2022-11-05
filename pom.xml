@@ -82,8 +82,13 @@
             <version>${mysql.version}</version>
         </dependency>
 
-
+        <!--导入jdbc场景，数据源的自动配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

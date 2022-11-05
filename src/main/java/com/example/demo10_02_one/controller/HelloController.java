@@ -22,6 +22,7 @@ public class HelloController {
 
     @GetMapping(value = "/hello")
     public List<User> hello(){
+        log.info("hello():{}",userService.queryAll());
         return userService.queryAll();
     }
 }

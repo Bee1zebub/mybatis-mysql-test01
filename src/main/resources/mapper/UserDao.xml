@@ -2,6 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.demo10_02_one.dao.IUserDao">
 
-    <select id="queryAll"></select>
+    <select id="queryAll" resultType="com.example.demo10_02_one.bean.User">
+        select * from tb1_user
+    </select>
 
 </mapper>

@@ -8,7 +8,9 @@ import java.util.List;
 
 @Mapper
 public interface IUserDao {
-    @Select("select * from tb1_user")
+    //@Select("select * from tb1_user")
     List<User> queryAll();
+
+
 
 }
